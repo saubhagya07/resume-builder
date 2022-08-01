@@ -5,30 +5,37 @@ import resumebackground from '././assets/resuembackground.png';
 
 import styles from "./Header.module.css";
 function Header() {
-    return (
-        <div className="Nav">
-            <Nav1/>
-            
+  return (
+    <div className="Nav">
+      <Nav1 />
 
-        <div className= {styles.container}>
+      <div className={styles.container}>
         <article
-           className={styles.article}
-            style={{ backgroundImage: `url(${resumebackground})`}}>
-                <div className={styles.left}>   
-                <p className={styles.heading}>A <span>Resume</span> that stand out!</p>
-                <p className={styles.heading}> Make you own Resume.<span><br></br>
-                 It's Free!!</span></p>
-        </div>
+          className={styles.article}
+          style={{
+            backgroundImage: `url(${resumebackground})`,
+          }}
+        >
+          <div className={styles.left}>
+            <p className={styles.heading}>
+              A <span>Resume</span> that stand out!
+            </p>
+            <p className={styles.heading}>
+              {" "}
+              Make you own Resume.
+              <span>
+                <br></br>
+                It's Free!!
+              </span>
+            </p>
+          </div>
+          <div>
+            <img src={resumeSvg} alt="Resume" height="300px" width="500px" />
+          </div>
         </article>
-        </div>
-            <article
-                className = {styles.article}>
-                <div classname={styles.right}>
-                <img src={resumeSvg} alt='Resume' height = "300px" width = "500px"/>
-                </div></article>
-        </div>
-
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Header;
