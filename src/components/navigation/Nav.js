@@ -8,23 +8,18 @@ function Nav1() {
   return (
     <>
       <Navbar bg="light" variant="light">
-        <Container>
+        <Container fluid style={{ "margin-right": "1%", "margin-left": "1%" }}>
           <Navbar.Brand href="#home">
-          <img
-          src = {Publify}
-           alt='Publify' 
-           height = "80px" 
-           width = "80px"
-           />
+            <img src={Publify} alt="Publify" height="80px" width="80px" />
           </Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="justify-content-end">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#contactUs">Contact Us</Nav.Link>
             <Nav.Link href="#aboutUs">About Us</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-      </>
+    </>
   );
 }
 
